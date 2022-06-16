@@ -1,0 +1,122 @@
+/* SHARED  */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header,
+#container,
+.show-result,
+.fav-show-element,
+.upcoming-episode {
+  display: flex;
+  flex-direction: row;
+}
+
+#show-header {
+  display: flex;
+  flex-direction: row;
+}
+
+/* HEADER  */
+header {
+  background-color: cadetblue;
+  align-items: center;
+  padding: 20px;
+}
+
+#form-input {
+  height: 40px;
+  width: 200px;
+  margin-left: 50px;
+  padding-left: 10px;
+}
+.search-form .form-input,
+.search-form .submit-btn {
+  height: 40px;
+}
+
+.search-form .form-input {
+  width: 200px;
+  margin-left: 50px;
+  padding-left: 10px;
+}
+
+.search-form .submit-btn {
+  width: 70px;
+  border-radius: 0px;
+}
+
+/* SHOW SECTION */
+
+.hide {
+  display: none;
+}
+.show-result {
+  margin: 30px;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: grey; */
+  box-shadow: 0 2px 5px #888888;
+}
+
+.shows-section {
+  width: 1000px;
+  height: 100%;
+}
+
+.show-image {
+  width: 178px;
+  height: 250px;
+}
+.show-image img {
+  width: 178px;
+  height: 250px;
+}
+
+.show-basic-content h2 {
+  padding-left: 20px;
+  margin: 10px 0px;
+}
+
+.show-basic-content p {
+  padding: 0 20px;
+}
+
+.show-basic-content ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.show-basic-content li {
+  padding: 3px 13px;
+  margin-left: 20px;
+  outline: 1px solid #000;
+  border-radius: 20px;
+  font-style: italic;
+}
+
+input[type="checkbox"] {
+  margin: 3px 3px 3px 20px;
+}
+
+/* FAVORITE SECTION */
+.favorites-section {
+  background-color: lightgray;
+  padding: 20px;
+  position: sticky;
+}
+.favorites-section h3,
+.favorites-section h4 {
+  margin: 10px 10px;
+}
+
+.heart-favorite {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.episode-airdate {
+  margin: 10px;
+}

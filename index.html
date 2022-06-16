@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>TV Maze</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TV Shows</h1>
+      <form class="search-form">
+        <input
+          type="text"
+          id="form-input"
+          placeholder="Search Show"
+          data-search
+        />
+        <!-- <button type="submit" class="submit-btn">Search</button> -->
+      </form>
+    </header>
+    <section id="container">
+      <div class="shows-section" show-card-container>
+        <template show-template>
+          <div class="show-result">
+            <div class="show-image">
+              <img src="" alt="" data-image />
+            </div>
+            <div class="show-basic-content">
+              <div id="show-header">
+                <!-- <img src="/heart.png" alt class="heart-favorite" /> -->
+              </div>
+              <div class="show-details">
+                <h2 data-title></h2>
+                <p data-summary></p>
+                <p data-language></p>
+                <input type="checkbox" id="my-checkbox" my-checkbox>Favorite</input>
+                <!-- <p id="message" data-favorite></p> -->
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <div class="favorites-section">
+        <h2>Your Favorite Shows</h2>
+        <div class="your-favorites" fav-card-container>
+          <template fav-template>
+            <div class="fav-show-element hide">
+              <img src="/heart.png" alt class="heart-favorite" />
+              <h3 data-fav-title></h3>
+              <!-- <input type="checkbox" my-checkbox-2 checked></input> -->
+            </div>
+          </template>
+        </div>
+        <div class="upcoming-favorites">
+          <h2>Upcoming Episodes from your favorite shows</h2>
+          <!-- <template> -->
+            <div class="upcoming-episode" upcoming-episode-container>
+                <div class="episode-airdate" episode-airdate>19/<strong>07</strong></div>
+                <div class="upcoming-episode-info">
+                    <h3 upcoming-show-title>Show Title</h3>
+                    <h4 upcoming-episode-number>Episode Number</h4>
+                </div>
+          </div>
+          <!-- </template> -->
+        </div>
+      </div>
+    </section>
+    
+    <script src="./app.js"></script>
+  </body>
+</html>
